@@ -18,6 +18,10 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
    }
    return foundbookmark;
  },
+  removebookmark(id,bookmarkId){
+    const bookmark = this.getbookmark(id);
+    
+  },
 };
 
 module.exports = bookmarkList;

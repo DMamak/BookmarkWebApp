@@ -15,8 +15,12 @@ const bookmark= {
                     },
   
   deleteBookmark(request,response){
-    const bookmarkId = request.params.id;
-    const bookmarksId = request.params.b
+    const CategoryId = request.params.id;
+    const bookmarkId = request.params.bookmarkid;
+    logger.debug('Deleting Bookmark bookmarkId from Category CategoryId}');
+    bookmarkCollection.removebookmark(CategoryId,bookmarkId);
+    response.redirect('/bookmark/'+ CategoryId);
+  },
                     };
 
 module.exports= bookmark;
