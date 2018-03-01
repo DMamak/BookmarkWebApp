@@ -1,7 +1,7 @@
 'use strict';
 
 const logger = require('../utils/logger');
-const bookmarklist= require('../models/bookmarklist.js');
+const bookmarklist= require('../models/bookmarklist');
 
 const dashboard = {
   index(request, response) {

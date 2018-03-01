@@ -1,18 +1,18 @@
 'use strict'
 
 const logger = require ('../utils/logger');
-const bookmarkCollection = require('../models/bookmarklist.js');
+const bookmarkCollection = require('../models/bookmarklist');
 
-const bookmarkCategories = {
+const bookmarks= {
   index(request,response){
-    const cathegoryId= request.params.id;
-    logger.debug('Cathegory Id = ',cathegoryId);
+    const bookmarkid= request.params.id;
+    logger.debug('bookmark Id = ',bookmarkid);
     const viewData = {
       title: 'Bookmarks',
-      Categories: bookmarkCollection.getbookmarks(cathegoryId),
+      bookmark: bookmarkCollection.getbookmarks(bookmarkid),
     };
     response.render('bookmarks',viewData);
                     },
                     };
 
-module.exports= bookmarkCategories;
+module.exports= bookmarks;
