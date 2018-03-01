@@ -8,7 +8,7 @@ const dashboard = {
     logger.info('dashboard rendering');
     const viewData = {
       title: 'Bookmarks Dashboard',
-      bookmarks: bookmarkCollection,
+      bookmarks: bookmarkCollectio,
     };
     response.render('dashboard', viewData);
   },

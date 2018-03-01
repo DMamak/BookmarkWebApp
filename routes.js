@@ -11,6 +11,6 @@ const bookmarks = require('./controllers/bookmarks.js');
 router.get('/', start.index);
 router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
-router
+router.get('/bookmarks/:id',bookmarks.index);
 
 module.exports = router;
