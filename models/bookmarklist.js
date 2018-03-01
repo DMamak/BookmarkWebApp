@@ -1,5 +1,5 @@
 'use strict';
-const bookmarksList = {
+const bookmarkList = {
   
 bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
 
@@ -7,7 +7,7 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
   return this.bookmarkCollection;
 },
       
- getbookmarks(id){
+ getbookmark(id){
    let foundbookmark = null;
    for(let bookmark of this.bookmarkCollection)
    {
@@ -20,4 +20,4 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
  },
 };
 
-module.exports = bookmarksList;
+module.exports = bookmarkList;
