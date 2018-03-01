@@ -9,8 +9,10 @@ const bookmarks = {
     logger.debug('Cathegory Id = ',cathegoryId);
     const viewData = {
       title: 'Bookmarks',
+      bookmark: bookmarkCollection.getbookmarks(cathegoryId),
     };
     response.render('bookmarks',viewData);
                     },
                     };
+
 module.exports= bookmarks;

@@ -8,15 +8,15 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
 },
       
  getbookmarks(id){
-   let foundBookmark = null;
-   for(let bookmark of this.bookmarkCollection)
+   let foundCathegory = null;
+   for(let cathegory of this.bookmarkCollection)
    {
-     if(id == bookmark.id)
+     if(id == cathegory.id)
      {
-       foundBookmark = bookmark;
+       foundCathegory = cathegory;
      }
    }
-   return foundBookmark;
+   return foundCathegory;
  },
 };
 module.exports = bookmarksList;
