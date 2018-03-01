@@ -1,24 +1,29 @@
 {
   "bookmarkCollection": [
     {
+      "id" : "01",
       "Category": "HTML Learning Resources",
       "bookmarks": [
         {
+          "id" : "01",
           "title": "Codecademy",
           "link": "https://www.codecademy.com/learn/learn-html",
           "description":"Easiest Way to learn Coding"
         },
         {
+          "id" : "02",
           "title": "HTML Cheat Sheet",
           "link": "https://digital.com/tools/html-cheatsheet/",
           "description":"This incredibly helpful HTML cheat sheet"
         },
         {
+          "id" : "03",
           "title": " CodePen's Yearly Top Pens",
           "link": "https://codepen.io/2016/popular/pens/",
           "description":"One of the best ways to learn HTML is to dissect cool demos you discover"
         },
         {
+          "id" : "04",
           "title": " w3schools",
           "link": "https://www.w3schools.com/",
           "description":"The worlds Largest web developer site"
@@ -26,24 +31,29 @@
       ]
     },
     {
+      "id" : "02",
       "Category": "CSS Learning Resources",
       "bookmarks": [
         {
+          "id" : "01",
           "title": "CSS-Tricks",
           "link": "https://css-tricks.com/",
           "description":"plenty of helpful information and tutorials about CSS"
         },
         {
+          "id" : "02",
           "title": "CSS Cheat Sheet",
           "link": "https://www.onblastblog.com/css3-cheat-sheet/",
           "description":"Confused by all those elements? Keep track with this cheat sheet"
         },
         {
+          "id" : "03",
           "title": "CSS Wizardry",
           "link": "https://csswizardry.com/",
           "description":"Harry Roberts' CSS Wizardry has some of the best articles on the nitty-gritty of writing scalable and maintainable CSS"
         },
         {
+          "id" : "04",
           "title": "Sara Soueidan",
           "link": "http://www.sarasoueidan.com/blog/css-shapes/",
           "description":"Create non-rectangular layouts with CSS shapes"
@@ -52,24 +62,29 @@
     },
     
     {
+      "id" : "03",
      "Category": "Javascript Learning Resources",
       "bookmarks": [
         {
+          "id" : "01",
           "title": "JavaScript for Cats",
           "link": "http://jsforcats.com/",
           "description":"An introduction for new programmers so easy your human companion could do it too!"
         },
         {
+          "id" : "02",
           "title": "Learn JS",
           "link": "http://www.learn-js.org/",
           "description":"Whether you are an experienced programmer or not, this website is intended for everyone who wishes to learn the JavaScript programming language"
         },
         {
+          "id" : "03",
           "title": "MDN web docs",
           "link": "https://developer.mozilla.org/en-US/docs/Learn/JavaScript",
           "description":"JavaScript is a programming language that allows you to implement complex things on web pages."
         },
         {
+          "id" : "04",
           "title": "Code School",
           "link": "https://www.codeschool.com/learn/javascript",
           "description":"These courses will give you a strong foundation in the JavaScript language so you’ll be ready to move up to frameworks like Angular and Node.js."

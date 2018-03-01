@@ -1,8 +1,10 @@
 {{> menu id="dashboard"}}
 
-<section class="ui segment">
-  <h2 class="ui header">
-    Bookmarks
-  </h2>
-  {{> bookmarkslist}}
-</section>
+{{#each bookmarks}}
+  <section class="ui segment">
+    <h2 class="ui header">
+      {{Category}}
+    </h2>
+    <a href="/bookmarks/{{id}}">View</a>
+  </section>
+{{/each}}
