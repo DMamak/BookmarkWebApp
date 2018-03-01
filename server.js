@@ -20,5 +20,5 @@ const routes = require('./routes');
 app.use('/', routes);
 
 const listener = app.listen(process.env.PORT || 4000, function () {
-  logger.info(`Your App is Listening on port ' + listener.address().port);
+  console.log('Your App is Listening on port ' + listener.address().port);
 });
