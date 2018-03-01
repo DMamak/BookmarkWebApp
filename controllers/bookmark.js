@@ -6,7 +6,6 @@ const bookmarkCollection = require('../models/bookmarklist.js');
 const bookmark= {
   index(request,response){
     const bookmarkid= request.params.id;
-    logger.debug('bookmark Id = ',bookmarkid);
     const viewData = {
       title: 'Bookmark',
       bookmark: bookmarkCollection.getbookmark(bookmarkid),
@@ -17,7 +16,8 @@ const bookmark= {
   deleteBookmark(request,response){
     const CategoryId = request.params.id;
     const bookmarkId = request.params.bookmarkid;
-    logger.debug('Deleting Bookmark bookmarkId from Category CategoryId}');
+    logger.debug('Deleting Bookmark=',bookmarkId);
+    logger.debug('from Category', CategoryId);
     bookmarkCollection.removebookmark(CategoryId,bookmarkId);
     response.redirect('/bookmark/'+ CategoryId);
   },
