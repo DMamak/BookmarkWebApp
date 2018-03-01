@@ -19,4 +19,5 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
    return foundCathegory;
  },
 };
+
 module.exports = bookmarksList;
