@@ -13,6 +13,10 @@ const bookmark= {
     };
     response.render('bookmark',viewData);
                     },
+  
+  deleteBookmark(request,response){
+    const bookmarkId = request.params.id;
+    const bookmarksId = request.params.b
                     };
 
 module.exports= bookmark;

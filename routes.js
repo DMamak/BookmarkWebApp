@@ -12,5 +12,6 @@ router.get('/', start.index);
 router.get('/dashboard', dashboard.index);
 router.get('/about', about.index);
 router.get('/bookmark/:id',bookmark.index);
+router.get('/bookmark/:id/deletebookmark/:bookmarkid',bookmark.deleteBookmark);
 
 module.exports = router;
