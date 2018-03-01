@@ -19,6 +19,6 @@ app.set('view engine', '.hbs');
 const routes = require('./routes');
 app.use('/', routes);
 
-const listener = app.listen(process.env.PORT, function () {
-  logger.info(`glitch-playlist1 started on port ${listener.address().port}`);
+const listener = app.listen(process.env.PORT || 4000, function () {
+  logger.info(`Your App is Listening on port ' + listener.address().port);
 });
