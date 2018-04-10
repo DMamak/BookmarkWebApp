@@ -12,6 +12,14 @@ const dashboard = {
     };
     response.render('dashboard', viewData);
   },
+
+
+ deleteCategory(request,response){
+   const categoryID = request.params.id;
+   bookmarklist
+   
+ },
 };
+
 
 module.exports = dashboard;
