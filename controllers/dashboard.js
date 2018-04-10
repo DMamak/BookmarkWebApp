@@ -16,7 +16,8 @@ const dashboard = {
 
  deleteCategory(request,response){
    const categoryID = request.params.id;
-   bookmarklist
+   bookmarklist.removeCategory(categoryID);
+   response.redirect('/dashboard');
    
  },
 };
