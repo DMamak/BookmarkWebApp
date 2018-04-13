@@ -25,6 +25,9 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
     const bookmarke = this.getbookmark(id);
     bookmarke.bookmarks.push(bookmark);
   },
+  addCategory(category){
+    this.bookmarkCollection.push(category);
+  },
 };
 
 module.exports = bookmarkList;

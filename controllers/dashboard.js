@@ -2,6 +2,7 @@
 
 const logger = require('../utils/logger');
 const bookmarklist= require('../models/bookmarklist');
+const uuid = require('uuid');
 
 const dashboard = {
   index(request, response) {
@@ -20,6 +21,15 @@ const dashboard = {
    response.redirect('/dashboard');
    
  },
+  addCategory(request,response){
+    const newCategory = {
+      id : uuid(),
+      Category: request.body.title,
+      bookmarks: []
+    };
+    bookmarklist.addCategory(newCategory);
+    response.redirect('/dashboard');
+  },
 };
 
 
