@@ -2,6 +2,7 @@
 
 const logger = require ('../utils/logger');
 const bookmarkCollection = require('../models/bookmarklist.js');
+const uuid = require('uuid');
 
 const bookmark= {
   index(request,response){
@@ -28,6 +29,7 @@ const bookmark= {
     const bookmark = bookmarkCollection.getbookmark(categoryID);
     logger.debug(request.body.title);
     const newBookmark = {
+      id:uuid(),
       title: request.body.title,
       link: request.body.link,
       description: request.body.description,
