@@ -9,16 +9,18 @@ const dashboard = {
   index(request, response) {
     logger.info('dashboard rendering');
     const loggedInUser = accounts.getCurrentUser(request);
+    logger.info(accounts.getCurrentUser(request));
     if(loggedInUser)
     {
     const viewData = {
       title: 'Bookmarks Dashboard',
       bookmarks: bookmarklist.getAllbookmarks(),
-      fullname:loggedInUser.firstName+''+loggedInUser.lastName,
+      fullname: loggedInUser.firstName+' '+loggedInUser.lastName,
     };
     response.render('dashboard', viewData);
     }
-    else response.redirect('/');
+    else
+      response.redirect('/');
   },
 
 
