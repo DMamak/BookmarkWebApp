@@ -1,24 +1,29 @@
 'use strict';
 const _ = require('lodash'); 
+const JsonStore = require('./jsonstore.js');
 const bookmarkList = {
-  
-bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
+  store:new JsonStore('./models/bookmarklist.json',{bookmarkCollection:[]}),
+  collection:'bookmarkCollection',
 
   getAllbookmarks(){
-  return this.bookmarkCollection;
+  return this.store.findAll(this.collection);
 },
       
  getbookmark(id){
-   return _.find(this.bookmarkCollection,{id:id});
+   return this.store.findOneBy(this.collection,{id:id});
  },
   
   removebookmark(id,bookmarkId){
     const bookmark = this.getbookmark(id);
-    _.remove(bookmark.bookmarks,{id:bookmarkId});
-    
+    const bookmarks = bookmark.bookmarks;
+    _.remove(bookmarks,{id:bookmarkId});
   },
   removeCategory(id){
-    _.remove(this.bookmarkCollection,{id:id});
+    const category = this.getbookmark(id);
+    this.store.remove(this.collection,category);
+  },
+  removeAllCategories(){
+    this.store.removeAll(this.collection);
   },
   
   addBookmark(id,bookmark){
@@ -26,7 +31,7 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
     bookmarke.bookmarks.push(bookmark);
   },
   addCategory(category){
-    this.bookmarkCollection.push(category);
+    this.store.add(this.collection,category);
   },
 };
 
