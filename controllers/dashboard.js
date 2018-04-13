@@ -2,16 +2,23 @@
 
 const logger = require('../utils/logger');
 const bookmarklist= require('../models/bookmarklist');
+const accounts = require('./accounts.js');
 const uuid = require('uuid');
 
 const dashboard = {
   index(request, response) {
     logger.info('dashboard rendering');
+    const loggedInUser = accounts.getCurrentUser(request);
+    if(loggedInUser)
+    {
     const viewData = {
       title: 'Bookmarks Dashboard',
       bookmarks: bookmarklist.getAllbookmarks(),
+      fullname:loggedInUser.firstName+''+loggedInUser.lastName,
     };
     response.render('dashboard', viewData);
+    }
+    else response.redirect('/');
   },
 
 
@@ -22,8 +29,10 @@ const dashboard = {
    
  },
   addCategory(request,response){
+    const loggedInUser = accounts.getCurrentUser(request);
     const newCategory = {
       id : uuid(),
+      userid: loggedInUser.id,
       Category: request.body.title,
       bookmarks: []
     };
