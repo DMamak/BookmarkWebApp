@@ -22,8 +22,8 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
   },
   
   addBookmark(id,bookmark){
-    const bookmarks = this.getbookmark(id);
-    bookmarks.bookmarks.push(bookmark);
+    const bookmarke = this.getbookmark(id);
+    bookmarke.bookmarks.push(bookmark);
   },
 };
 

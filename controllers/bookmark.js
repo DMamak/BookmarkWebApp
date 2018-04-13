@@ -26,10 +26,11 @@ const bookmark= {
   addBookmark(request,response){
     const categoryID = request.params.id;
     const bookmark = bookmarkCollection.getbookmark(categoryID);
+    logger.debug(request.body.title);
     const newBookmark = {
       title: request.body.title,
       link: request.body.link,
-      description:request.body.description,
+      description: request.body.description,
     };
     bookmarkCollection.addBookmark(categoryID,newBookmark);
      response.redirect('/bookmark/'+ categoryID);
