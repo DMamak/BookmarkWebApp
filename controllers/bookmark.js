@@ -6,6 +6,7 @@ const bookmarkCollection = require('../models/bookmarklist.js');
 const bookmark= {
   index(request,response){
     const bookmarkid= request.params.id;
+    logger.debug(bookmarkid);
     const viewData = {
       title: 'Bookmark',
       bookmark: bookmarkCollection.getbookmark(bookmarkid),
