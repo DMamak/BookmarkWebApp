@@ -14,7 +14,7 @@ const dashboard = {
     {
     const viewData = {
       title: 'Bookmarks Dashboard',
-      bookmarks: bookmarklist.getAllbookmarks(),
+      bookmarks: bookmarklist.getUserBookmarks(loggedInUser.id),
       fullname: loggedInUser.firstName+' '+loggedInUser.lastName,
     };
     response.render('dashboard', viewData);

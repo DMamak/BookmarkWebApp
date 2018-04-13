@@ -42,10 +42,16 @@ const accounts = {
   authenticate(request, response) {
     const user = userstore.getUserByEmail(request.body.email);
     if (user) {
+      if(user.password === request.body.password){
       response.cookie('bookmark', user.email);
       logger.info(`logging in ${user.email}`);
       response.redirect('/start');
-    } else {
+    }
+      else{
+      response.redirect('/login');
+    }
+    }
+      else {
       response.redirect('/login');
     }
   },
