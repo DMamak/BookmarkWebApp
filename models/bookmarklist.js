@@ -33,6 +33,10 @@ const bookmarkList = {
   addCategory(category){
     this.store.add(this.collection,category);
   },
+  
+  getUserBookmarks(userid){
+   return this.store.findBy(this.collection,{userid:userid}); 
+  }
 };
 
 module.exports = bookmarkList;
