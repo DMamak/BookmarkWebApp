@@ -24,15 +24,15 @@ const bookmark= {
   },
   
   addBookmark(request,response){
-    const bookmarkID = request.params.id;
-    const bookmark = bookmarkCollection.getbookmark(bookmarkID);
+    const categoryID = request.params.id;
+    const bookmark = bookmarkCollection.getbookmark(categoryID);
     const newBookmark = {
       title: request.body.title,
       link: request.body.link,
       description:request.body.description,
     };
-    bookmarkCollection.addBookmark(bookmarkID,newBookmark);
-     response.redirect('/bookmark/'+ bookmarkID);
+    bookmarkCollection.addBookmark(categoryID,newBookmark);
+     response.redirect('/bookmark/'+ categoryID);
   
 },
                     };
