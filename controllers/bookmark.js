@@ -21,6 +21,18 @@ const bookmark= {
     bookmarkCollection.removebookmark(CategoryId,bookmarkId);
     response.redirect('/bookmark/'+ CategoryId);
   },
+  
+  addBookmark(request,response){
+    const bookmarkID = request.params.id;
+    const bookmark = bookmarkCollection.getbookmark(bookmarkID);
+    const newBookmark = {
+      title: request.body.title,
+      link: request.body.link,
+      description:request.body.description,
+    };
+    bookmarkCollection.addBookmark
+  
+},
                     };
 
 module.exports= bookmark;

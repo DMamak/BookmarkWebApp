@@ -28,6 +28,7 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
   removeCategory(id){
     _.remove(this.bookmarkCollection,{id:id});
   },
+  
 };
 
 module.exports = bookmarkList;
