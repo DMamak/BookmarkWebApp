@@ -36,7 +36,8 @@ const bookmarkList = {
   
   getUserBookmarks(userid){
    return this.store.findBy(this.collection,{userid:userid}); 
-  }
+  },
+  
 };
 
 module.exports = bookmarkList;
