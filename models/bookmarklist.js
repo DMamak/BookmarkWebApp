@@ -9,15 +9,7 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
 },
       
  getbookmark(id){
-   let foundbookmark = null;
-   for(let bookmark of this.bookmarkCollection)
-   {
-     if(id == bookmark.id)
-     {
-       foundbookmark = bookmark;
-     }
-   }
-   return foundbookmark;
+   return _.find(this.bookmarkCollection,{id:id});
  },
   
   removebookmark(id,bookmarkId){
