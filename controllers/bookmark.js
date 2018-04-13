@@ -1,18 +1,25 @@
 'use strict'
 
+const accounts = require('./accounts.js');
 const logger = require ('../utils/logger');
 const bookmarkCollection = require('../models/bookmarklist.js');
 const uuid = require('uuid');
 
 const bookmark= {
   index(request,response){
+    const loggedInUser = accounts.getCurrentUser(request);
     const bookmarkid= request.params.id;
     logger.debug(bookmarkid);
+    if(loggedInUser){
+      
     const viewData = {
       title: 'Bookmark',
       bookmark: bookmarkCollection.getbookmark(bookmarkid),
+      fullname: loggedInUser.firstName+' '+loggedInUser.lastName,
     };
     response.render('bookmark',viewData);
+    }
+    else response.redirect('/');
                     },
   
   deleteBookmark(request,response){

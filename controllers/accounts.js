@@ -44,7 +44,7 @@ const accounts = {
     if (user) {
       response.cookie('bookmark', user.email);
       logger.info(`logging in ${user.email}`);
-      response.redirect('/dashboard');
+      response.redirect('/start');
     } else {
       response.redirect('/login');
     }
