@@ -29,6 +29,10 @@ bookmarkCollection: require('./bookmarkslist.json').bookmarkCollection,
     _.remove(this.bookmarkCollection,{id:id});
   },
   
+  addBookmark(id,bookmark){
+    const bookmarks = this.getbookmark(id);
+    bookmarks.bookmarks.push(bookmark);
+  },
 };
 
 module.exports = bookmarkList;

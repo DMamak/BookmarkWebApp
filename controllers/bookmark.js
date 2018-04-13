@@ -30,7 +30,8 @@ const bookmark= {
       link: request.body.link,
       description:request.body.description,
     };
-    bookmarkCollection.addBookmark
+    bookmarkCollection.addBookmark(bookmarkID,newBookmark);
+    response.redirect('/bookmark/'+ bookmarkID);
   
 },
                     };
