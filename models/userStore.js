@@ -16,4 +16,12 @@ const userStore = {
   },
   
   getUserById(id){
-    return this.store.findOneBy
+    return this.store.findOneBy(this.collection,{id:id});
+  },
+  
+  getUserByEmail(email){
+    return this.store.findOneBy(this.cllection,{email:email});
+  },
+}
+
+module.exports = userStore;
