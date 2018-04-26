@@ -1,3 +1,80 @@
 {
-  "bookmarkCollection": []
+  "bookmarkCollection": [
+    {
+      "id": "bc094a2d-501b-42fd-89fe-e2ff6aa6c9b4",
+      "userid": "be2bcc05-af68-4d24-80a5-902bdd85aaa3",
+      "Category": "afaf",
+      "bookmarks": [
+        {
+          "id": "82f1976a-e606-49d6-9fde-7293438aadf8",
+          "title": "faf",
+          "link": "faf",
+          "description": "aaf"
+        }
+      ]
+    },
+    {
+      "id": "938dbc16-8221-4332-8221-9928a13a2fad",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "Category": "afa",
+      "bookmarks": [
+        {
+          "id": "8adcb3a5-eef6-426e-aede-60e17995a4cb",
+          "title": "fakanf",
+          "link": "jafnkj",
+          "description": "njfan"
+        },
+        {
+          "id": "3f7d61db-40d2-4ec3-a58d-3309f60b2b41",
+          "title": "jnajfn",
+          "link": "jlnaljfn",
+          "description": "janfl"
+        },
+        {
+          "id": "b183cdaa-9d47-4ef9-a107-9b0e91ee7131",
+          "title": "kjbjka",
+          "link": "klnka",
+          "description": "klnfla"
+        }
+      ]
+    },
+    {
+      "id": "b109f724-c551-4814-a9b1-5da89c9011d8",
+      "userid": "be2bcc05-af68-4d24-80a5-902bdd85aaa3",
+      "Category": "derp",
+      "bookmarks": [
+        {
+          "id": "e763243c-f580-43b0-bf31-9c163172a247",
+          "title": "ioanfb",
+          "link": "kjlafnlknaf",
+          "description": "oinafna"
+        },
+        {
+          "id": "a5beb06b-c8c9-4de6-ab8e-3df19d52e524",
+          "title": "klNFJKnf",
+          "link": "nkjafk",
+          "description": "kjfbakjbf"
+        },
+        {
+          "id": "438a44d9-cc90-49ff-8836-fa29e10e6bdb",
+          "title": "klfafkj",
+          "link": "kjafnkjfn",
+          "description": "fjanfkan"
+        }
+      ]
+    },
+    {
+      "id": "fdd3a34a-e5a6-4674-aab1-affbb57763ec",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "Category": "Derp",
+      "bookmarks": [
+        {
+          "id": "19989acb-0433-47d0-b94c-ebcb9b9537e8",
+          "title": "kjak",
+          "link": "kjNDK",
+          "description": "JFKJA"
+        }
+      ]
+    }
+  ]
 }
